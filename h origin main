@@ -1,0 +1,23 @@
+[33mcommit 76fec73ada0602c5c57bab2a59e2d3eaf19c888a[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: nguyenduy <you@example.com>
+Date:   Tue Feb 3 03:39:08 2026 +0700
+
+    Add deployment configuration (Docker, Traefik, Nginx)
+
+ .gitignore                |   24 [32m+[m
+ App.tsx                   |  271 [32m+++++[m
+ Dockerfile                |   31 [32m+[m
+ components/ChatWidget.tsx |  194 [32m++++[m
+ constants.ts              |  893 [32m+++++++++++++++[m
+ docker-compose.yml        |   37 [32m+[m
+ index.html                |  108 [32m++[m
+ index.tsx                 |   15 [32m+[m
+ metadata.json             |    5 [32m+[m
+ nginx.conf                |   15 [32m+[m
+ package-lock.json         | 2709 [32m+++++++++++++++++++++++++++++++++++++++++++++[m
+ package.json              |   22 [32m+[m
+ services/geminiService.ts |   68 [32m++[m
+ tsconfig.json             |   29 [32m+[m
+ types.ts                  |   31 [32m+[m
+ vite.config.ts            |   23 [32m+[m
+ 16 files changed, 4475 insertions(+)
