@@ -69,3 +69,16 @@ cd ~/APP_KHTN_EDUTECHND
 git pull origin main
 docker compose up -d --build
 ```
+
+## 6. Dọn dẹp & Bảo trì
+
+Sau nhiều lần build, VPS sẽ đầy dung lượng do các image cũ. Bạn nên chạy lệnh sau thỉnh thoảng để dọn dẹp:
+
+```bash
+# Xóa các image "rác" (dangling images - image cũ không dùng nữa)
+docker image prune -f
+
+# Xóa toàn bộ image, container, network không dùng đến (CẨN THẬN: Xóa sạch sẽ)
+docker system prune -a
+```
+

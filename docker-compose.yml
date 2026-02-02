@@ -14,7 +14,7 @@ services:
       - "traefik.http.routers.khtn-app.entrypoints=websecure"
 
       # SSL: Thay 'myresolver' bằng tên resolver trong Traefik cũ (thường là 'le', 'letsencrypt' hoặc 'myresolver')
-      - "traefik.http.routers.khtn-app.tls.certresolver=myresolver"
+      - "traefik.http.routers.khtn-app.tls.certresolver=letsencrypt" # Thử đổi thành 'letsencrypt'
 
       # Redirect HTTP -> HTTPS (Tự định nghĩa middleware trên container này)
       - "traefik.http.middlewares.khtn-redirect.redirectscheme.scheme=https"
