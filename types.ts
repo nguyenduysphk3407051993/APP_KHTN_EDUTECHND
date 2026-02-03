@@ -47,3 +47,11 @@ export interface ChatMessage {
 }
 
 export type ViewState = 'HOME' | 'GRADE' | 'LESSON';
+
+export type AIProvider = 'GEMINI' | 'OPENAI' | 'OPENROUTER';
+
+export interface AIConfig {
+  provider: AIProvider;
+  apiKey: string;
+  model: string;
+}
