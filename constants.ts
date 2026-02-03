@@ -46,7 +46,41 @@ export const CURRICULUM_DATA: GradeData[] = [
                 <li><strong>Vật sống:</strong> Có các đặc trưng như trao đổi chất và chuyển hoá năng lượng, sinh trưởng và phát triển, vận động, cảm ứng, sinh sản. Ví dụ: con người, cây lúa, vi khuẩn.</li>
                 <li><strong>Vật không sống:</strong> Không có các đặc trưng của sự sống. Ví dụ: hòn đá, cái bàn, nước.</li>
             </ul>`,
-            imageUrl: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=800&q=80"
+            imageUrl: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=800&q=80",
+            exercises: [
+              {
+                id: "ex6-1-1",
+                type: "MULTIPLE_CHOICE",
+                question: "Lĩnh vực nào sau đây nghiên cứu về các vật sống?",
+                options: [
+                  { id: "opt1", text: "Vật lí học", isCorrect: false },
+                  { id: "opt2", text: "Hóa học", isCorrect: false },
+                  { id: "opt3", text: "Sinh học", isCorrect: true },
+                  { id: "opt4", text: "Thiên văn học", isCorrect: false }
+                ],
+                explanation: "Sinh học (hay sinh vật học) là lĩnh vực nghiên cứu về các vật sống."
+              },
+              {
+                id: "ex6-1-2",
+                type: "TRUE_FALSE",
+                question: "Khoa học tự nhiên chỉ nghiên cứu về các vật thể nhân tạo do con người làm ra.",
+                correctAnswer: false,
+                explanation: "Sai. Khoa học tự nhiên nghiên cứu các sự vật, hiện tượng của thế giới tự nhiên."
+              },
+              {
+                id: "ex6-1-3",
+                type: "SHORT_ANSWER",
+                question: "Đâu là lĩnh vực nghiên cứu về Trái Đất và bầu khí quyển?",
+                correctAnswer: "Khoa học Trái Đất",
+                explanation: "Khoa học Trái Đất là lĩnh vực nghiên cứu về Trái Đất và bầu khí quyển."
+              },
+              {
+                id: "ex6-1-4",
+                type: "ESSAY",
+                question: "Hãy lấy 3 ví dụ về vật sống và 3 ví dụ về vật không sống xung quanh em.",
+                explanation: "Gợi ý: Vật sống (con mèo, cây phượng, bạn bè...); Vật không sống (hòn đá, cái ghế, quyển sách...)."
+              }
+            ]
           },
           {
             id: "l6-2",
@@ -315,10 +349,10 @@ export const CURRICULUM_DATA: GradeData[] = [
         id: "c6-3",
         title: "Chương III: Vật liệu, Nguyên liệu, Nhiên liệu...",
         lessons: [
-          { 
-            id: "l6-12", 
-            title: "Bài 12: Một số vật liệu", 
-            description: "Kim loại, nhựa, gỗ, cao su, thủy tinh...", 
+          {
+            id: "l6-12",
+            title: "Bài 12: Một số vật liệu",
+            description: "Kim loại, nhựa, gỗ, cao su, thủy tinh...",
             content: `<h3>1. Vật liệu là gì?</h3>
             <p>Vật liệu là chất hoặc hỗn hợp một số chất được con người dùng để làm ra các vật thể (sản phẩm) phục vụ cuộc sống.</p>
             
@@ -340,10 +374,10 @@ export const CURRICULUM_DATA: GradeData[] = [
             </ul>`,
             imageUrl: "https://images.unsplash.com/photo-1510936111840-65e151ad71bb?auto=format&fit=crop&w=800&q=80"
           },
-          { 
-            id: "l6-13", 
-            title: "Bài 13: Một số nguyên liệu", 
-            description: "Đá vôi, quặng...", 
+          {
+            id: "l6-13",
+            title: "Bài 13: Một số nguyên liệu",
+            description: "Đá vôi, quặng...",
             content: `<h3>1. Nguyên liệu</h3>
             <p>Nguyên liệu là vật liệu tự nhiên chưa qua xử lý, được dùng làm đầu vào cho các quá trình sản xuất.</p>
             <p>Ví dụ: Mía (sản xuất đường), Đá vôi (sản xuất xi măng), Quặng (sản xuất kim loại).</p>
@@ -358,10 +392,10 @@ export const CURRICULUM_DATA: GradeData[] = [
             <p>Nguyên liệu khoáng sản là tài nguyên không tái tạo. Cần khai thác an toàn, tiết kiệm và bảo vệ môi trường.</p>`,
             imageUrl: "https://images.unsplash.com/photo-1618218168350-6e7c8115209f?auto=format&fit=crop&w=800&q=80"
           },
-          { 
-            id: "l6-14", 
-            title: "Bài 14: Một số nhiên liệu", 
-            description: "Than, xăng, dầu, khí đốt.", 
+          {
+            id: "l6-14",
+            title: "Bài 14: Một số nhiên liệu",
+            description: "Than, xăng, dầu, khí đốt.",
             content: `<h3>1. Nhiên liệu là gì?</h3>
             <p>Nhiên liệu (chất đốt) là những chất khi cháy toả nhiệt và phát sáng. Ví dụ: than, củi, xăng, dầu, khí gas.</p>
 
@@ -381,10 +415,10 @@ export const CURRICULUM_DATA: GradeData[] = [
             </ul>`,
             imageUrl: "https://images.unsplash.com/photo-1524316270928-12d937000732?auto=format&fit=crop&w=800&q=80"
           },
-          { 
-            id: "l6-15", 
-            title: "Bài 15: Một số lương thực, thực phẩm", 
-            description: "Vai trò của lương thực, thực phẩm.", 
+          {
+            id: "l6-15",
+            title: "Bài 15: Một số lương thực, thực phẩm",
+            description: "Vai trò của lương thực, thực phẩm.",
             content: `<h3>1. Vai trò của lương thực, thực phẩm</h3>
             <p>Cung cấp năng lượng và các chất dinh dưỡng cần thiết cho sự sống và phát triển của cơ thể.</p>
             <ul>
@@ -410,10 +444,10 @@ export const CURRICULUM_DATA: GradeData[] = [
         id: "c6-4",
         title: "Chương IV: Hỗn hợp & Tách chất",
         lessons: [
-          { 
-            id: "l6-16", 
-            title: "Bài 16: Hỗn hợp các chất", 
-            description: "Hỗn hợp đồng nhất và không đồng nhất.", 
+          {
+            id: "l6-16",
+            title: "Bài 16: Hỗn hợp các chất",
+            description: "Hỗn hợp đồng nhất và không đồng nhất.",
             content: `<h3>1. Chất tinh khiết và Hỗn hợp</h3>
             <ul>
                 <li><strong>Chất tinh khiết:</strong> Chỉ gồm một chất duy nhất, có tính chất nhất định. (VD: Nước cất, muối ăn tinh khiết).</li>
@@ -433,10 +467,10 @@ export const CURRICULUM_DATA: GradeData[] = [
             </ul>`,
             imageUrl: "https://images.unsplash.com/photo-1627932644652-32b03332c027?auto=format&fit=crop&w=800&q=80"
           },
-          { 
-            id: "l6-17", 
-            title: "Bài 17: Tách chất khỏi hỗn hợp", 
-            description: "Lọc, cô cạn, chiết.", 
+          {
+            id: "l6-17",
+            title: "Bài 17: Tách chất khỏi hỗn hợp",
+            description: "Lọc, cô cạn, chiết.",
             content: `<h3>Nguyên tắc tách chất</h3>
             <p>Dựa vào sự khác nhau về tính chất vật lý của các chất (kích thước hạt, độ tan, nhiệt độ sôi, khối lượng riêng...) để tách chúng ra khỏi hỗn hợp.</p>
 
@@ -457,10 +491,10 @@ export const CURRICULUM_DATA: GradeData[] = [
         id: "c6-5",
         title: "Chương V: Tế bào",
         lessons: [
-          { 
-            id: "l6-18", 
-            title: "Bài 18: Tế bào – Đơn vị cơ bản của sự sống", 
-            description: "Khái niệm tế bào.", 
+          {
+            id: "l6-18",
+            title: "Bài 18: Tế bào – Đơn vị cơ bản của sự sống",
+            description: "Khái niệm tế bào.",
             content: `<h3>1. Khái niệm tế bào</h3>
             <p>Tế bào là đơn vị cấu trúc và chức năng cơ bản của mọi cơ thể sinh vật. Mọi cơ thể sống đều được cấu tạo từ tế bào.</p>
 
@@ -471,10 +505,10 @@ export const CURRICULUM_DATA: GradeData[] = [
             </ul>`,
             imageUrl: "https://images.unsplash.com/photo-1576086476234-1103be98f09f?auto=format&fit=crop&w=800&q=80"
           },
-          { 
-            id: "l6-19", 
-            title: "Bài 19: Cấu tạo và chức năng các thành phần", 
-            description: "Màng, chất tế bào, nhân/vùng nhân.", 
+          {
+            id: "l6-19",
+            title: "Bài 19: Cấu tạo và chức năng các thành phần",
+            description: "Màng, chất tế bào, nhân/vùng nhân.",
             content: `<h3>1. Các thành phần chính của tế bào</h3>
             <ul>
                 <li><strong>Màng tế bào:</strong> Bao bọc tế bào, bảo vệ và kiểm soát các chất ra vào tế bào.</li>
@@ -490,10 +524,10 @@ export const CURRICULUM_DATA: GradeData[] = [
             </ul>`,
             imageUrl: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=800&q=80"
           },
-          { 
-            id: "l6-20", 
-            title: "Bài 20: Sự lớn lên và sinh sản của tế bào", 
-            description: "Quá trình phân chia tế bào.", 
+          {
+            id: "l6-20",
+            title: "Bài 20: Sự lớn lên và sinh sản của tế bào",
+            description: "Quá trình phân chia tế bào.",
             content: `<h3>1. Sự lớn lên của tế bào</h3>
             <p>Tế bào lấy các chất dinh dưỡng từ môi trường, tổng hợp thành chất của mình để tăng kích thước và khối lượng.</p>
 
@@ -508,10 +542,10 @@ export const CURRICULUM_DATA: GradeData[] = [
             <p>Giúp cơ thể sinh vật lớn lên và thay thế các tế bào bị già, chết hoặc tổn thương.</p>`,
             imageUrl: "https://images.unsplash.com/photo-1581090700227-1e37b190418e?auto=format&fit=crop&w=800&q=80"
           },
-          { 
-            id: "l6-21", 
-            title: "Bài 21: Thực hành quan sát tế bào", 
-            description: "Quan sát tế bào thực vật, động vật.", 
+          {
+            id: "l6-21",
+            title: "Bài 21: Thực hành quan sát tế bào",
+            description: "Quan sát tế bào thực vật, động vật.",
             content: `<h3>1. Quan sát tế bào biểu bì hành tây (Thực vật)</h3>
             <ul>
                 <li>Tách một lớp biểu bì mỏng từ vảy hành.</li>
@@ -559,10 +593,10 @@ export const CURRICULUM_DATA: GradeData[] = [
         id: "c6-8",
         title: "Chương VIII: Lực trong đời sống",
         lessons: [
-          { 
-            id: "l6-40", 
-            title: "Bài 40: Lực là gì?", 
-            description: "Khái niệm lực (đẩy, kéo).", 
+          {
+            id: "l6-40",
+            title: "Bài 40: Lực là gì?",
+            description: "Khái niệm lực (đẩy, kéo).",
             content: `<h3>1. Khái niệm lực</h3>
             <p>Tác dụng đẩy hoặc kéo của vật này lên vật khác gọi là <strong>lực</strong>.</p>
             <h3>2. Tác dụng của lực</h3>
@@ -572,12 +606,12 @@ export const CURRICULUM_DATA: GradeData[] = [
                 <li>Thay đổi hướng chuyển động.</li>
                 <li>Làm biến dạng vật.</li>
             </ul>`,
-            imageUrl: "https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=800&q=80" 
+            imageUrl: "https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=800&q=80"
           },
-          { 
-            id: "l6-41", 
-            title: "Bài 41: Biểu diễn lực", 
-            description: "Độ lớn, phương, chiều.", 
+          {
+            id: "l6-41",
+            title: "Bài 41: Biểu diễn lực",
+            description: "Độ lớn, phương, chiều.",
             content: `<h3>1. Các đặc trưng của lực</h3>
             <p>Lực được đặc trưng bởi: <strong>Điểm đặt, Phương, Chiều và Độ lớn</strong>.</p>
             <p>Đơn vị lực là <strong>Newton</strong> (kí hiệu: $N$).</p>
@@ -588,24 +622,24 @@ export const CURRICULUM_DATA: GradeData[] = [
                 <li>Phương và chiều của mũi tên trùng với phương và chiều của lực.</li>
                 <li>Độ dài mũi tên biểu thị độ lớn của lực (theo một tỉ lệ xích).</li>
             </ul>`,
-            imageUrl: "https://images.unsplash.com/photo-1614332287897-cdc485fa562d?auto=format&fit=crop&w=800&q=80" 
+            imageUrl: "https://images.unsplash.com/photo-1614332287897-cdc485fa562d?auto=format&fit=crop&w=800&q=80"
           },
-          { 
-            id: "l6-42", 
-            title: "Bài 42: Biến dạng của lò xo", 
-            description: "Độ dãn của lò xo.", 
+          {
+            id: "l6-42",
+            title: "Bài 42: Biến dạng của lò xo",
+            description: "Độ dãn của lò xo.",
             content: `<h3>1. Tính đàn hồi</h3>
             <p>Lò xo là vật đàn hồi. Khi chịu tác dụng lực (kéo/nén), nó bị biến dạng. Khi thôi tác dụng, nó trở về hình dạng ban đầu.</p>
             <h3>2. Đặc điểm biến dạng</h3>
             <p>Độ dãn của lò xo treo thẳng đứng tỉ lệ thuận với khối lượng vật treo (trong giới hạn đàn hồi của lò xo).</p>
             <p>$$ \\Delta l = l - l_0 $$</p>
             <p>Trong đó $l_0$ là chiều dài tự nhiên, $l$ là chiều dài khi biến dạng.</p>`,
-            imageUrl: "https://images.unsplash.com/photo-1515259972333-662232936729?auto=format&fit=crop&w=800&q=80" 
+            imageUrl: "https://images.unsplash.com/photo-1515259972333-662232936729?auto=format&fit=crop&w=800&q=80"
           },
-          { 
-            id: "l6-43", 
-            title: "Bài 43: Trọng lượng, lực hấp dẫn", 
-            description: "Lực hút của Trái Đất.", 
+          {
+            id: "l6-43",
+            title: "Bài 43: Trọng lượng, lực hấp dẫn",
+            description: "Lực hút của Trái Đất.",
             content: `<h3>1. Lực hấp dẫn</h3>
             <p>Là lực hút giữa các vật có khối lượng. Mọi vật trong vũ trụ đều hút nhau.</p>
             <h3>2. Trọng lực và Trọng lượng</h3>
@@ -617,12 +651,12 @@ export const CURRICULUM_DATA: GradeData[] = [
             <p>Trên bề mặt Trái Đất, mối liên hệ giữa trọng lượng và khối lượng là:</p>
             <p>$$ P = 10 \\times m $$</p>
             <p>($m$ tính bằng $kg$, $P$ tính bằng $N$).</p>`,
-            imageUrl: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80" 
+            imageUrl: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80"
           },
-          { 
-            id: "l6-44", 
-            title: "Bài 44: Lực ma sát", 
-            description: "Ma sát trượt, ma sát nghỉ.", 
+          {
+            id: "l6-44",
+            title: "Bài 44: Lực ma sát",
+            description: "Ma sát trượt, ma sát nghỉ.",
             content: `<h3>1. Lực ma sát là gì?</h3>
             <p>Lực ma sát là lực tiếp xúc xuất hiện ở bề mặt tiếp xúc giữa hai vật, cản trở chuyển động của vật này trên bề mặt vật kia.</p>
             <h3>2. Các loại ma sát</h3>
@@ -633,16 +667,16 @@ export const CURRICULUM_DATA: GradeData[] = [
             </ul>
             <h3>3. Tác dụng</h3>
             <p>Ma sát có thể có hại (làm mòn chi tiết máy) hoặc có lợi (giúp ta cầm nắm, đi lại được).</p>`,
-            imageUrl: "https://images.unsplash.com/photo-1597762699478-434b971a64d1?auto=format&fit=crop&w=800&q=80" 
+            imageUrl: "https://images.unsplash.com/photo-1597762699478-434b971a64d1?auto=format&fit=crop&w=800&q=80"
           },
-          { 
-            id: "l6-45", 
-            title: "Bài 45: Lực cản của nước", 
-            description: "Lực cản môi trường lỏng.", 
+          {
+            id: "l6-45",
+            title: "Bài 45: Lực cản của nước",
+            description: "Lực cản môi trường lỏng.",
             content: `<h3>Lực cản của nước</h3>
             <p>Khi một vật chuyển động trong nước (hoặc không khí), nước sẽ tác dụng một lực cản ngược chiều chuyển động, làm vật chuyển động chậm lại.</p>
             <p>Độ lớn lực cản phụ thuộc vào hình dạng của vật. Hình dạng khí động học (thuôn nhọn ở đầu) giúp giảm lực cản (VD: hình dạng con cá, tàu ngầm).</p>`,
-            imageUrl: "https://images.unsplash.com/photo-1582967788606-a171f1080ca8?auto=format&fit=crop&w=800&q=80" 
+            imageUrl: "https://images.unsplash.com/photo-1582967788606-a171f1080ca8?auto=format&fit=crop&w=800&q=80"
           }
         ]
       },
@@ -650,10 +684,10 @@ export const CURRICULUM_DATA: GradeData[] = [
         id: "c6-9",
         title: "Chương IX: Năng lượng",
         lessons: [
-          { 
-            id: "l6-46", 
-            title: "Bài 46: Năng lượng và sự truyền năng lượng", 
-            description: "Khái niệm năng lượng.", 
+          {
+            id: "l6-46",
+            title: "Bài 46: Năng lượng và sự truyền năng lượng",
+            description: "Khái niệm năng lượng.",
             content: `<h3>1. Năng lượng</h3>
             <p>Mọi hoạt động đều cần năng lượng. Năng lượng đặc trưng cho khả năng tác dụng lực.</p>
             <p>Đơn vị năng lượng trong hệ SI là <strong>Joule</strong> (kí hiệu: $J$).</p>
@@ -663,12 +697,12 @@ export const CURRICULUM_DATA: GradeData[] = [
                 <li>Tác dụng lực (thực hiện công).</li>
                 <li>Truyền nhiệt.</li>
             </ul>`,
-            imageUrl: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=800&q=80" 
+            imageUrl: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=800&q=80"
           },
-          { 
-            id: "l6-47", 
-            title: "Bài 47: Một số dạng năng lượng", 
-            description: "Động năng, thế năng, nhiệt năng...", 
+          {
+            id: "l6-47",
+            title: "Bài 47: Một số dạng năng lượng",
+            description: "Động năng, thế năng, nhiệt năng...",
             content: `<h3>Các dạng năng lượng thường gặp</h3>
             <ul>
                 <li><strong>Động năng:</strong> Năng lượng vật có được do chuyển động (xe đang chạy).</li>
@@ -679,44 +713,44 @@ export const CURRICULUM_DATA: GradeData[] = [
                 <li><strong>Quang năng:</strong> Năng lượng ánh sáng (Mặt Trời, bóng đèn).</li>
                 <li><strong>Năng lượng âm:</strong> Năng lượng của sóng âm.</li>
             </ul>`,
-            imageUrl: "https://images.unsplash.com/photo-1413882353314-73389f63b6fd?auto=format&fit=crop&w=800&q=80" 
+            imageUrl: "https://images.unsplash.com/photo-1413882353314-73389f63b6fd?auto=format&fit=crop&w=800&q=80"
           },
-          { 
-            id: "l6-48", 
-            title: "Bài 48: Sự chuyển hóa năng lượng", 
-            description: "Định luật bảo toàn năng lượng.", 
+          {
+            id: "l6-48",
+            title: "Bài 48: Sự chuyển hóa năng lượng",
+            description: "Định luật bảo toàn năng lượng.",
             content: `<h3>1. Sự chuyển hóa</h3>
             <p>Năng lượng có thể chuyển từ dạng này sang dạng khác. Ví dụ: Khi bật quạt điện, điện năng chuyển hóa thành cơ năng (động năng) và một phần nhiệt năng.</p>
             <h3>2. Định luật bảo toàn năng lượng</h3>
             <p><em>"Năng lượng không tự sinh ra hoặc tự mất đi, nó chỉ chuyển từ dạng này sang dạng khác hoặc truyền từ vật này sang vật khác."</em></p>`,
-            imageUrl: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b0?auto=format&fit=crop&w=800&q=80" 
+            imageUrl: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b0?auto=format&fit=crop&w=800&q=80"
           },
-          { 
-            id: "l6-49", 
-            title: "Bài 49: Năng lượng hao phí", 
-            description: "Năng lượng hữu ích và hao phí.", 
+          {
+            id: "l6-49",
+            title: "Bài 49: Năng lượng hao phí",
+            description: "Năng lượng hữu ích và hao phí.",
             content: `<h3>Năng lượng hữu ích và hao phí</h3>
             <p>Khi sử dụng năng lượng vào một mục đích nào đó, luôn có một phần năng lượng là hữu ích và một phần là hao phí.</p>
             <ul>
                 <li><strong>Năng lượng hữu ích:</strong> Phần năng lượng phục vụ đúng mục đích (VD: Ánh sáng từ bóng đèn).</li>
                 <li><strong>Năng lượng hao phí:</strong> Phần năng lượng không phục vụ mục đích chính, thường biến thành nhiệt năng tỏa ra môi trường (VD: Nhiệt tỏa ra từ bóng đèn).</li>
             </ul>`,
-            imageUrl: "https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&w=800&q=80" 
+            imageUrl: "https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&w=800&q=80"
           },
-          { 
-            id: "l6-50", 
-            title: "Bài 50: Năng lượng tái tạo", 
-            description: "Điện gió, điện mặt trời...", 
+          {
+            id: "l6-50",
+            title: "Bài 50: Năng lượng tái tạo",
+            description: "Điện gió, điện mặt trời...",
             content: `<h3>1. Năng lượng tái tạo</h3>
             <p>Là nguồn năng lượng có sẵn trong thiên nhiên, liên tục được bổ sung, được coi là vô tận. Ví dụ: Năng lượng Mặt Trời, năng lượng gió, năng lượng nước, năng lượng sinh khối, địa nhiệt.</p>
             <h3>2. Năng lượng không tái tạo</h3>
             <p>Mất hàng triệu năm để hình thành, sẽ bị cạn kiệt nếu khai thác quá mức. Ví dụ: Than đá, dầu mỏ, khí đốt (nhiên liệu hóa thạch).</p>`,
-            imageUrl: "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=800&q=80" 
+            imageUrl: "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=800&q=80"
           },
-          { 
-            id: "l6-51", 
-            title: "Bài 51: Tiết kiệm năng lượng", 
-            description: "Biện pháp tiết kiệm.", 
+          {
+            id: "l6-51",
+            title: "Bài 51: Tiết kiệm năng lượng",
+            description: "Biện pháp tiết kiệm.",
             content: `<h3>Tại sao phải tiết kiệm năng lượng?</h3>
             <p>Tiết kiệm năng lượng giúp bảo vệ tài nguyên thiên nhiên, giảm ô nhiễm môi trường và tiết kiệm chi phí.</p>
             <h3>Một số biện pháp</h3>
@@ -726,7 +760,7 @@ export const CURRICULUM_DATA: GradeData[] = [
                 <li>Tận dụng ánh sáng và gió tự nhiên.</li>
                 <li>Sử dụng phương tiện công cộng hoặc xe đạp.</li>
             </ul>`,
-            imageUrl: "https://images.unsplash.com/photo-1542601906990-b4d3fb7d5c73?auto=format&fit=crop&w=800&q=80" 
+            imageUrl: "https://images.unsplash.com/photo-1542601906990-b4d3fb7d5c73?auto=format&fit=crop&w=800&q=80"
           }
         ]
       },
@@ -734,29 +768,29 @@ export const CURRICULUM_DATA: GradeData[] = [
         id: "c6-10",
         title: "Chương X: Trái Đất và bầu trời",
         lessons: [
-          { 
-            id: "l6-52", 
-            title: "Bài 52: Chuyển động nhìn thấy của Mặt Trời", 
-            description: "Mọc đằng Đông, lặn đằng Tây.", 
+          {
+            id: "l6-52",
+            title: "Bài 52: Chuyển động nhìn thấy của Mặt Trời",
+            description: "Mọc đằng Đông, lặn đằng Tây.",
             content: `<h3>Chuyển động của Mặt Trời</h3>
             <p>Hằng ngày, ta thấy Mặt Trời mọc ở hướng Đông, di chuyển trên bầu trời và lặn ở hướng Tây.</p>
             <p><strong>Giải thích:</strong> Đây là chuyển động nhìn thấy (chuyển động giả). Thực tế là do Trái Đất tự quay quanh trục của nó theo chiều từ <strong>Tây sang Đông</strong>, nên ta thấy Mặt Trời di chuyển ngược lại.</p>`,
-            imageUrl: "https://images.unsplash.com/photo-1529753253655-470be9a42781?auto=format&fit=crop&w=800&q=80" 
+            imageUrl: "https://images.unsplash.com/photo-1529753253655-470be9a42781?auto=format&fit=crop&w=800&q=80"
           },
-          { 
-            id: "l6-53", 
-            title: "Bài 53: Mặt Trăng", 
-            description: "Các pha của Mặt Trăng.", 
+          {
+            id: "l6-53",
+            title: "Bài 53: Mặt Trăng",
+            description: "Các pha của Mặt Trăng.",
             content: `<h3>1. Đặc điểm</h3>
             <p>Mặt Trăng là vệ tinh tự nhiên duy nhất của Trái Đất. Mặt Trăng không tự phát sáng, chúng ta nhìn thấy nó là do nó phản chiếu ánh sáng từ Mặt Trời.</p>
             <h3>2. Các pha của Mặt Trăng</h3>
             <p>Hình dạng Mặt Trăng mà ta nhìn thấy thay đổi theo chu kỳ tháng (Trăng tròn, Trăng khuyết, Không trăng). Nguyên nhân là do vị trí tương đối giữa Mặt Trời, Trái Đất và Mặt Trăng thay đổi khi Mặt Trăng quay quanh Trái Đất.</p>`,
-            imageUrl: "https://images.unsplash.com/photo-1532693322450-2cb5c511067d?auto=format&fit=crop&w=800&q=80" 
+            imageUrl: "https://images.unsplash.com/photo-1532693322450-2cb5c511067d?auto=format&fit=crop&w=800&q=80"
           },
-          { 
-            id: "l6-54", 
-            title: "Bài 54: Hệ Mặt Trời", 
-            description: "8 hành tinh trong hệ.", 
+          {
+            id: "l6-54",
+            title: "Bài 54: Hệ Mặt Trời",
+            description: "8 hành tinh trong hệ.",
             content: `<h3>Cấu trúc Hệ Mặt Trời (Thái Dương Hệ)</h3>
             <p>Hệ Mặt Trời bao gồm Mặt Trời ở trung tâm và các thiên thể chuyển động xung quanh.</p>
             <p>Có 8 hành tinh quay quanh Mặt Trời theo thứ tự từ trong ra ngoài:</p>
@@ -770,16 +804,16 @@ export const CURRICULUM_DATA: GradeData[] = [
                 <li><strong>Thiên Vương tinh</strong> (Uranus)</li>
                 <li><strong>Hải Vương tinh</strong> (Neptune)</li>
             </ol>`,
-            imageUrl: "https://images.unsplash.com/photo-1614730341194-75c60740a270?auto=format&fit=crop&w=800&q=80" 
+            imageUrl: "https://images.unsplash.com/photo-1614730341194-75c60740a270?auto=format&fit=crop&w=800&q=80"
           },
-          { 
-            id: "l6-55", 
-            title: "Bài 55: Ngân Hà", 
-            description: "Dải Ngân Hà (Milky Way).", 
+          {
+            id: "l6-55",
+            title: "Bài 55: Ngân Hà",
+            description: "Dải Ngân Hà (Milky Way).",
             content: `<h3>Ngân Hà (Milky Way)</h3>
             <p>Ngân Hà là một tập hợp hàng trăm tỉ ngôi sao, khí và bụi. Hệ Mặt Trời của chúng ta nằm ở rìa của một cánh tay xoắn ốc của Ngân Hà.</p>
             <p>Nhìn từ Trái Đất, Ngân Hà trông giống như một dải sáng mờ vắt ngang bầu trời đêm (Sông Ngân).</p>`,
-            imageUrl: "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=800&q=80" 
+            imageUrl: "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=800&q=80"
           }
         ]
       }
