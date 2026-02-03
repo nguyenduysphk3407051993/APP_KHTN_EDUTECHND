@@ -14,7 +14,7 @@ export const sendMessageToAI = async (
     if (config.provider === 'GEMINI') {
         try {
             const genAI = new GoogleGenAI({ apiKey: config.apiKey });
-            const model = config.model || 'gemini-3-flash-preview'; // Default model
+            const model = config.model || 'gemini-2.0-flash'; // Default model
 
             const chatSession = genAI.chats.create({
                 model: model,
@@ -46,7 +46,7 @@ export const sendMessageToAI = async (
             ? 'https://openrouter.ai/api/v1/chat/completions'
             : 'https://api.openai.com/v1/chat/completions';
 
-        const defaultModel = config.provider === 'OPENROUTER' ? 'google/gemini-3-flash-preview' : 'gpt-4.1-mini';
+        const defaultModel = config.provider === 'OPENROUTER' ? 'moonshotai/kimi-k2.5' : 'gpt-4o-mini';
         const model = config.model || defaultModel;
 
         const headers: Record<string, string> = {

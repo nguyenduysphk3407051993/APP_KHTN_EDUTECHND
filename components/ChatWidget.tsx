@@ -4,9 +4,9 @@ import { ChatMessage, AIConfig, AIProvider } from '../types';
 
 // Define available models for each provider
 const MODEL_OPTIONS: Record<AIProvider, string[]> = {
-  'GEMINI': ['gemini-3-flash-preview', 'gemini-3-pro-preview'],
-  'OPENAI': ['gpt-4o', 'gpt-4.1-mini', 'gpt-5'],
-  'OPENROUTER': ['openai/gpt-4.1-mini', 'openai/gpt-4o-mini', 'anthropic/claude-3.5-sonnet']
+  'GEMINI': ['gemini-3-flash-preview', 'gemini-3-pro-preview', 'gemini-2.5-pro'],
+  'OPENAI': ['gpt-4o', 'gpt-4o-mini', 'gpt-4.1-mini'],
+  'OPENROUTER': ['openai/gpt-4o-mini', 'moonshotai/kimi-k2.5', 'google/gemini-3-flash-preview', 'anthropic/claude-3.5-sonnet']
 };
 
 interface ChatWidgetProps {
